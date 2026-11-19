@@ -13,7 +13,7 @@ test.beforeEach(async ({ page }) => {
   username = uniqueName();
   await page.goto("/#/register");
   await submitForm(page, username, "secret123", "Register");
-  await expect(page.getByRole("alert")).toHaveText(`Account created for ${username}. Please log in.`);
+  await expect(page.getByRole("alert")).toHaveText('Wrong Title');
 });
 // Happy path
 test("registered user can log in", async ({ page }) => {
