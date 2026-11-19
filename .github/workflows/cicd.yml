@@ -66,7 +66,7 @@ jobs:
           context: .
           file: ./Dockerfile.multistage
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/node-auth-app:frontend
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/auth-app:frontend
 
       - name: Build and push backend
         uses: docker/build-push-action@v6
@@ -74,7 +74,7 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/node-auth-app:backend
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/auth-app:backend
 
       - name: Stop full stack
         if: always()
