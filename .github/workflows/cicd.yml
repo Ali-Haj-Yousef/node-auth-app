@@ -79,4 +79,3 @@ jobs:
       - name: Stop full stack
         if: always()
         run: docker compose down -v
-```
