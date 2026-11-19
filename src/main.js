@@ -1,4 +1,4 @@
-// UI layer: renders the pages and reacts to the forms.  Users are stored by the backend.
+// UI layer: renders the pages and reacts to the forms. Users are stored by the backend.
 import "./style.css";
 import * as api from "./api.js";
 // UI state only. Users now live in the database, behind the backend API.
